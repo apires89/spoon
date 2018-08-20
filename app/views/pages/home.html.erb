@@ -1,0 +1,15 @@
+<h1>Home page</h1>
+
+<form action="/restaurants" method="get">
+  <input type="text" name="food_type" placeholder="What kind of food?">
+  <input type="submit">
+</form>
+
+<h2>Create a new restaurant</h2>
+
+<form action="/restaurants" method="post">
+  <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+  <input type="text" name="name" placeholder="Name">
+  <input type="text" name="address" placeholder="Address">
+  <input type="submit">
+</form>

@@ -1,0 +1,14 @@
+<h1>Here are your restaurants</h1>
+
+<% categories = ['japanese','indian','french'] %>
+
+<h2>Look at the various restaurants</h2>
+
+
+<% @restaurants.each do |id,restaurant| %>
+<p>Name:<%= restaurant[:name] %></p>
+<p>Address:<%= restaurant[:address] %></p>
+<p>Category:<%= restaurant[:category] %></p>
+
+
+<% end %>

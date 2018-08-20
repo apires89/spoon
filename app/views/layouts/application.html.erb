@@ -11,5 +11,11 @@
 
   <body>
     <%= yield %>
+    <p>A simple footer</p>
+    <p>The time is <%=Time.now %></p>
+    <%= link_to "About Informantion", about_path %>
+    <%= link_to "Restaurants", restaurants_path %>
+    <%= link_to "Dishoom", restaurant_path(1) %>
+
   </body>
 </html>
